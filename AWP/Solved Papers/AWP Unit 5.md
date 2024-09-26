@@ -1,4 +1,4 @@
-##### <span style="color:blue;">1. Provide an explanation for Xml TextWriter class, including its methods.</span>
+#### <span style="color:blue;">1. Provide an explanation for Xml TextWriter class, including its methods.</span>
 1. The `XmlTextWriter` class in ASP.NET is part of the `System.Xml` namespace and is used to write XML documents or XML Response in asp.net web applications in a forward-only manner.
 2. It provides a simple and efficient way to create XML data, and it's particularly useful for generating XML output in applications.
 3. Unlike other XML writers, `XmlTextWriter` writes data in a forward-only fashion which means once we have generated some part of the output we cannot go back to previous element and do any changes, this makes it efficient for generating XML on the fly.
@@ -47,7 +47,7 @@ public class XmlWriterExample
 }
 ```
 
-##### <span style="color:blue;">2. Describe the process of reading and XML document using the XDocument class.</span>
+#### <span style="color:blue;">2. Describe the process of reading and XML document using the XDocument class.</span>
 1. The `XDocument` class in .NET, part of the `System.Xml.Linq` namespace, provides a powerful and flexible way to read and manipulate XML documents using LINQ to XML.
 2. This class allows you to load, query, and modify XML in a straightforward manner.
 3. To read an xml document using XDocument, we need to follow below steps:
@@ -99,7 +99,7 @@ public class XmlReaderExample
 }
 ```
 
-##### <span style="color:blue;">3. Elaborate Forms Authentication.</span>
+#### <span style="color:blue;">3. Elaborate Forms Authentication.</span>
 1. Forms authentication is a method used in web applications to manage user authentication and authorization.
 2. It involves collecting user credentials (typically a username and password) through an HTML form and verifying them against a user database.
 3. The forms authentication settings are typically specified in the `Web.config` file of your ASP.NET application.
@@ -170,7 +170,7 @@ public class XmlReaderExample
 	} 
 	```
 
-##### <span style="color:blue;">4. Write a short note on authentication and authorization.</span>
+#### <span style="color:blue;">4. Write a short note on authentication and authorization.</span>
 **Authentication:**
 1. Authentication is the process of verifying the identity of a user or application. It involves verifying user what he claims to be. E.g If a user claims to be admin then using authentication mechanism we would verify if the user is admin or not
 2. It involves various different things to verify a user, e.g we could use passwords, pins, user specific questions, or multi-factor authentication which involves a combination of these mechanisms.
@@ -189,7 +189,7 @@ public class XmlReaderExample
 	2. **Claims Based Authorization:** Provides more granular control by allowing users to have multiple claims (attributes) that define their permissions.
 	3. **Policy Based Authorization:** We can create policies that dictate access based on custom rules, enhancing flexibility.
 
-##### <span style="color:blue;">5. What is AJAX? What are its advantages and disadvantages?</span>
+#### <span style="color:blue;">5. What is AJAX? What are its advantages and disadvantages?</span>
 1. AJAX (Asynchronous JavaScript and XML) is a web development technique that allows web applications to send and receive data from a server asynchronously, without requiring a full page refresh
 2. This technology enables a more dynamic and interactive user experience by allowing parts of a web page to be updated independently.
 3. AJAX makes use of Xml Http Request Object in JavaScript to send ajax requests to web server.
@@ -207,7 +207,7 @@ public class XmlReaderExample
 4. AJAX relies heavily on JavaScript, which means that if a user has JavaScript disabled, they will not be able to use the AJAX features of your application.
 5. In some cases, frequent AJAX requests for small data updates can lead to increased overall bandwidth consumption compared to a single full-page request.
 
-##### <span style="color:blue;">6. Write a short note on accordion control with appropriate properties.</span>
+#### <span style="color:blue;">6. Write a short note on accordion control with appropriate properties.</span>
 1. The Accordion control is a user interface component commonly used in web applications to organize and display content in a collapsible format.
 2. It allows users to expand or collapse sections of content, making it easier to manage large amounts of information while maintaining a clean and organized layout.
 3. We can load content dynamically into the panels using AJAX, which helps in reducing the initial page load time.
@@ -224,7 +224,7 @@ public class XmlReaderExample
 3. **Clear():** Removes all panels from the Accordion control, it is used to reset the accordion and remove all content dynamically.
 4. **Refresh():** Re-renders the Accordion control to reflect any changes made to the content or structure.
 
-##### <span style="color:blue;">7. What is xml? List various classes of xml.</span>
+#### <span style="color:blue;">7. What is xml? List various classes of xml.</span>
 1. XML (eXtensible Markup Language) is a markup language designed to store and transport data in a structured and human-readable format.
 2. It  is similar to HTML i.e it contains tags, the tags can have attributes, data is stored between the tag. Xml allows developers to define their own tags, making it flexible and adaptable for various applications.
 3. XML is commonly used for data interchange between systems, configuration files, and web services.
@@ -238,7 +238,7 @@ public class XmlReaderExample
 5. **XElement:** - Represents a single XML element and can be used to create, modify, or query XML data.
 6. **XmlSerializer:** Used to serialize and deserialize objects to and from XML format, making it easy to convert .NET objects into XML and vice versa.
 
-##### <span style="color:blue;">8. Explain ScriptManager and Timer Control.</span>
+#### <span style="color:blue;">8. Explain ScriptManager and Timer Control.</span>
 **ScriptManager:**
 1. The `ScriptManager` control is essential for enabling ASP.NET AJAX features. It manages client script for ASP.NET AJAX-enabled applications and is required for using other AJAX controls, like the `UpdatePanel`.
 2. With ScriptManager control and other ajax controls we can use ajax without even using JavaScript.
@@ -322,7 +322,7 @@ public partial class Default : System.Web.UI.Page
 }
 ```
 
-##### <span style="color:blue;">9. Explain AutoCompleteExtender in Asp.Net AJAX Control Toolkit.</span>
+#### <span style="color:blue;">9. Explain AutoCompleteExtender in Asp.Net AJAX Control Toolkit.</span>
 1. The `AutoCompleteExtender` is a component from the ASP.NET AJAX Control Toolkit that enhances user input by providing suggestions as users type in a text box.
 2. It’s commonly used in forms where you want to assist users by suggesting possible matches from a data source.
 3. It works when a user type in the text box, the extender makes asynchronous calls to the server to fetch matching suggestions, improving the user experience.
@@ -386,7 +386,7 @@ public partial class Default : System.Web.UI.Page
 }
 ```
 
-##### <span style="color:blue;">10. How web.config file is used to implement forms authentication in Asp.Net.</span>
+#### <span style="color:blue;">10. How web.config file is used to implement forms authentication in Asp.Net.</span>
 1. In ASP.NET, the `web.config` file is crucial for configuring forms authentication. This type of authentication allows users to log in using a form instead of using Windows authentication.
 2. Since web.config file is an xml file, we need to use xml syntax to configure forms authentication.
 3. We need to add authentication tag inside system.web tag in web.config file.
@@ -413,7 +413,7 @@ public partial class Default : System.Web.UI.Page
 </configuration>
 ```
 
-##### <span style="color:blue;">11. Write a code to save employee data as empId, empName, empDept and empDesignation in an xml file.</span>
+#### <span style="color:blue;">11. Write a code to save employee data as empId, empName, empDept and empDesignation in an xml file.</span>
 **Employee.aspx**
 ```
 <%@ Page Language="C#" AutoEventWireup="true" CodeFile="Employee.aspx.cs" Inherits="Employee" %>
@@ -509,7 +509,7 @@ public partial class Employee : System.Web.UI.Page
 }
 ```
 
-##### <span style="color:blue;">12. Explain the use of UpdateProgress control in AJAX.</span>
+#### <span style="color:blue;">12. Explain the use of UpdateProgress control in AJAX.</span>
 1. The `UpdateProgress` control in ASP.NET AJAX is used to provide feedback to users during asynchronous postbacks, such as when using an `UpdatePanel`. It displays a loading message or animation while a partial page update is being processed, enhancing user experience by indicating that a task is in progress.
 2. It informs users that an operation is ongoing, which is especially important for actions that may take noticeable time to complete.
 3. With UpdateProgress control we can customize the appearance of the loading indicator using CSS, making it fit seamlessly with your application's design.
@@ -572,7 +572,7 @@ public partial class Default : System.Web.UI.Page
 }
 ```
 
-##### <span style="color:blue;">13. Explain UpdatePanel.</span>
+#### <span style="color:blue;">13. Explain UpdatePanel.</span>
 1. The `UpdatePanel` control in ASP.NET is a key component of the ASP.NET AJAX framework that enables partial page updates.
 2. It allows us to update a portion of a web page asynchronously without requiring a full page refresh, improving the user experience and performance of web applications.
 3. Only the content within the `UpdatePanel` is refreshed, which reduces the amount of data sent over the network and speeds up the response time. This also allows user to keep using other parts of  the web page without any interruption.
