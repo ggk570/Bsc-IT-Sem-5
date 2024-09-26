@@ -13,7 +13,7 @@
 		When a .net framework program is first compiled, it is not directly compiled into native machine code (which is dependent on cpu architecture and os), instead it is compiled into an intermediate language which is platform independent. When this MSIL code is executed the it is converted into native machine code by just in time compiler which is a part of CLR.
 - Assemblies:
 		Assemblies are compiled code libraries used by .Net applications, they can be dlls or exes and contain metadata code and resources.
-		![[https://github.com/ggk570/Bsc-IT-Sem-4/blob/main/AWP/Solved%20Papers/Screenshots/net_framework_architecture.jpg]]
+		![](https://github.com/ggk570/Bsc-IT-Sem-4/blob/main/AWP/Solved%20Papers/Screenshots/net_framework_architecture.jpg)
 
 #### <span style="color:blue;">2. How does garbage collector function in context of .net. Provide a brief overview of the Base Class Library in .Net</span>
 **Garbage Collector:**
