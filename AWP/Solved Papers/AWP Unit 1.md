@@ -13,9 +13,9 @@
 		When a .net framework program is first compiled, it is not directly compiled into native machine code (which is dependent on cpu architecture and os), instead it is compiled into an intermediate language which is platform independent. When this MSIL code is executed the it is converted into native machine code by just in time compiler which is a part of CLR.
 - Assemblies:
 		Assemblies are compiled code libraries used by .Net applications, they can be dlls or exes and contain metadata code and resources.
-		![[~/Screenshots/net_framework_architecture.jpg]]
+		![.Net Framework Architecture](https://github.com/ggk570/Bsc-IT-Sem-4/blob/main/AWP/Solved%20Papers/Screenshots/net_framework_architecture.jpg)
 
-##### <span style="color:blue;">2. How does garbage collector function in context of .net. Provide a brief overview of the Base Class Library in .Net</span>
+#### <span style="color:blue;">2. How does garbage collector function in context of .net. Provide a brief overview of the Base Class Library in .Net</span>
 **Garbage Collector:**
 1. The .Net framework's garbage collector is a component of CLR, it is used to automatically manage memory allocation and deallocation to improve performance of the program and prevent memory leaks.
 2. Garbage collector uses a **mark and sweep** algorithm to identify and reclaim unused memory.
@@ -29,7 +29,7 @@
 4. The BCL form the foundation upon which more specialized functionality can be implementated by using inheritance.
 5. The core of the .Net framework lies in BCL.
 
-##### <span style="color:blue;">3. Explain any five properties/methods of Array Class.</span>
+#### <span style="color:blue;">3. Explain any five properties/methods of Array Class.</span>
 **An Array** is a data structure that can hold group of elements of same data type. In .Net Framework, Array class is the fundamental class that provides methods and properties to work with arrays.
 **Properties**
 1. **Length:**
@@ -68,7 +68,7 @@
 		`int[] num = {1,2,3,4,5,6};`
 		`Array.ForEach(num, Console.WriteLine);`
 
-##### <span style="color:blue;">4. Explain the process of data type conversion in C# and identify its various types.</span>
+#### <span style="color:blue;">4. Explain the process of data type conversion in C# and identify its various types.</span>
 1. Data type conversion is a process in which data of a particular type is converted into another type for various operations. Since data type defines the structure to store data in memory and also it defines the amount of memory required to store data. It is important for a programmer to know about data types and its conversion process to effectively write programs.
 2. There are two basic types of data type conversion in C#:
 	- **Implicit Conversion:**
@@ -85,7 +85,7 @@
 	`String num = "123";`
 	`int converted = Convert.ToInt32(num);`
 
-##### <span style="color:blue;">5. How to derive new class from base class. Give one example.</span>
+#### <span style="color:blue;">5. How to derive new class from base class. Give one example.</span>
 1. In C# to derive a new class from a base class, we need to create new class inhereting the base class. Inhereting a base class allows us to extend features of the base class without need to touch the pre-existing code. This saves us from getting unwanted bugs. We can also override any existing methods of the base class in our new class, this allows us to use the existing feature along with required changes.
 2. To create class that inherits another class we must follow a syntax, we have to use **:** in front of our new class name and then we need to specify the name of the class from which our new class is being derived.
 3. Example
@@ -126,7 +126,7 @@ public class Program{
 }
 ```
 
-##### <span style="color:blue;">6. What steps are involved in constructing a fundamental class in C#. Please delineate different class modifiers.</span>
+#### <span style="color:blue;">6. What steps are involved in constructing a fundamental class in C#. Please delineate different class modifiers.</span>
 1. C# is an object oriented programming language, every functional and non functional aspect of the program goes inside the class. Class is a template or blueprint that defines the structure, behaviour and attributes of an object.
 2. Behaviour is defined by methods in a class, when an of object of a class is created and these methods are called, they execute some functionality which represents a behavious. Similarly these object will have properties defined inside the class. We can change the values of these properties by accessing the objects and it's methods, these properties together represents the state of the object.
 3. To create a class in C#, we must follow few steps:
@@ -171,7 +171,7 @@ public class Program{
 		6. **private protected:**
 		The type or member can be accessed only within its declaring assembly, by code in the same class or in a type that is derived from that class.
 
-##### <span style="color:blue;">7. Explain foreach loop with suitable example.</span>
+#### <span style="color:blue;">7. Explain foreach loop with suitable example.</span>
 1. The foreach loop is used to iterate over a collection of items, such as arrays, lists or other enumerable collections. It simplifies the process of looping through each item without needing to use an index variable.
 2. Unlike the for loop we don't need to use an index variable, boolean conditions and increment/decrement operators, we can directly iterate over the collection by following the proper syntax.
 3. Foreach loop saves us from the overhead of using boolean conditions like we do with while and for loops. With foreach loop we just have to create a variable that represents data type of data in a collection or other iterable item. It makes use of **in** operator to iterate over a collection.
@@ -192,7 +192,7 @@ foreach(string item in stringArray){
 6. With the above example when the clr encounters a foreach loop, it declares the variable **item** and assigns it value of first element in the **stringArray**, after executing the code inside the curly braces, the loop startsover with second element of the array and this goes on until the array is fully traversed.
 7. The limitation of foreach loop is that it is readonly, for example with for loops we can traverse the array by using an index number and at the same time using the index number we can manipulate the array, however since foreach loop stores the element of the array in a separate variable we cannot manipulate data in an array.
 
-##### <span style="color:blue;">8. Distinguish between interface and abstract classes.</span>
+#### <span style="color:blue;">8. Distinguish between interface and abstract classes.</span>
 
 | Interface                                                                                                                                                     | Abstract Class                                                                                                   |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
@@ -204,7 +204,7 @@ foreach(string item in stringArray){
 | 6. It's purpose is to implement peripheral abilities of class.                                                                                                | 6. It's purpose it create more abstracted version of a class.                                                    |
 | 7. A class can use multiple interface.                                                                                                                        | 7. A class can use only one abstract class.                                                                      |
 | 8. All methods in an interface are abstracted by default but the abstract keyword is never used.                                                              | 8. At least one method should be abstract method and should be specified using abstract keyword.                 |
-##### <span style="color:blue;">9. What is a namespace. Describe system namespace.</span>
+#### <span style="color:blue;">9. What is a namespace. Describe system namespace.</span>
 1. Namespace is a way to orgranize and group related classes, interfaces etc.
 2. It helps to control the scope of methods and classes in larger .Net programming projects
 3. Namespace helps to avoid naming conflicts, e.g if we declare a class in one namespace, we can declare another class with the same name in another namespace.
@@ -227,7 +227,7 @@ namespace MyNamespace{
 9. System namespace also provides classes for various types of collections such as **List`<T>`**, **Dictionary`<TKey, TValue>`** and **Queue`<T>`**. 
 10. Other than this it includes classes for various Input/Output operations, threading purposes, string manipulation and much more.
 
-##### <span style="color:blue;">10. What is an assembly. Explain the difference between public and private assembly.</span>
+#### <span style="color:blue;">10. What is an assembly. Explain the difference between public and private assembly.</span>
 1. An assembly is a collection of types and resources that are built to work together and form a logical unit of functionality.
 2. Assemblies take the form of executable (.exe) or dynamic linking library (.dll) files and are the building block of .Net Framework Applications.
 3. They provide the common language runtime with the information it needs to be aware of type implementations.
@@ -249,7 +249,7 @@ namespace MyNamespace{
 	- Private assemblies do not need to be strongly named and can be versioned according to the application's needs. They are typically not versioned to the same degree of formality as public assemblies.
 	- E.g A utility library or custom component that is used exclusively by a specific application.
 
-##### <span style="color:blue;">11. Write a simple C# program to demonstrate class, object and method call. Use comments wherever required.</span>
+#### <span style="color:blue;">11. Write a simple C# program to demonstrate class, object and method call. Use comments wherever required.</span>
 1. A class is a blueprint or template that defines methods and properites for a specific type of object. These methods and properties are to be used by object. In some cases there are static methods and properties that don't required an instance instead they are directly called or accessed by the class itself.
 2. An object is an instance of the class that resides in heap. Consider an example of car, car is generic name for anything that has 4 wheels, moves with the help of engine, has features like AC. Now this can be represented by a generic class name car which defines properties like nameOfCar, noOfWheels = 4, mileage, topSpeed and methods accelerate(), break() which increases the speed of car and stop the car. However the car class on it's own doesn't represent anything rather than a blueprint, so there need to be specific version of this. Here we can create an object of car class and specify values to the properties. Thus this object will represent a real world object.
 3. Since the properties defines the characteristics of the object, thus they represent the state of object and the methods do something with the objects or properties of the object, they represents the behaviour.
@@ -303,7 +303,7 @@ namespace{
 }
 ```
 
-##### <span style="color:blue;">12. Explain compiling and execution of C# program.</span>
+#### <span style="color:blue;">12. Explain compiling and execution of C# program.</span>
 1. Compiling is a process in which their is a conversion of source code in programming language to machine language which can be understood and executed by the machine.
 2. For C# language there is a slight difference in compilation and execution process.
 3. When we write our code in C# using ide like visual studio and then build our program, our code gets compiled into Microsoft Intermediate Language (MSIL) by C# Compiler (csc).
@@ -327,7 +327,7 @@ namespace{
 | 4. Value types are generally more efficient for small, frequently accessed data because they don’t require heap allocation or garbage collection. | 4. Reference types can incur overhead due to heap allocation and garbage collection. They are usually used for larger, more complex data structures and objects.                                                        |
 | 5. In C# value types cannot be null unless they are declared as nullable.                                                                         | 5. In C# reference types default to null if not explicitly initialized.                                                                                                                                                 |
 | 6. E.g int, float, double, char, bool                                                                                                             | 6. E.g String, object, arrays.                                                                                                                                                                                          |
-##### <span style="color:blue;">14. Explain inheritance along with its type.</span>
+#### <span style="color:blue;">14. Explain inheritance along with its type.</span>
 1. Inheritance is a fundamental concept in object-oriented programming (OOP) that allows a class (known as the derived or child class) to inherit properties and methods from another class (known as the base or parent class). This promotes code reuse and establishes a hierarchical relationship between classes.
 2. The derived class can then extend or override these members to provide specific behavior.
 3. In C# there are several types of inheritance:
@@ -344,7 +344,7 @@ namespace{
 		E.g class C inherits class B which further inherits class A - Multi-Level Inheritance.
 		class C implements interface D. Thus class C is a combination of Multi-Level Inheritance and Multiple Inheritance.
 
-##### <span style="color:blue;">15. What is an ArrayList, state it's method and properties.</span>
+#### <span style="color:blue;">15. What is an ArrayList, state it's method and properties.</span>
 1. An `ArrayList` in C# is a class that belongs to the `System.Collections` namespace. It represents a non-generic collection of objects that can be accessed by index.
 2. ArrayList can store elements of any type and it can dynamically resize itself as elements are added or removed.
 3. Properties:
@@ -397,7 +397,7 @@ namespace{
 	6. It is capable of interoperatibility with other .Net Programming Languages.
 	7. C# also supports multithreading to run multiple threads concurrently thereby improving performance of code execution.
 
-##### <span style="color:blue;">17. What is property. Explain read-write property with proper syntax and example.</span>
+#### <span style="color:blue;">17. What is property. Explain read-write property with proper syntax and example.</span>
 1. In C#, a **property** is a member of a class that provides a mechanism to read, write, or compute the value of a private field. Properties are a way to encapsulate data and control access to it, providing a more controlled way to interact with the class's internal state compared to using public fields directly.
 2. A property typically consists of:
 	- **Getter:** A method (or accessor) that returns the value of the property.
@@ -440,7 +440,7 @@ namespace Students{
 }
 ```
 
-##### <span style="color:blue;">18. Explain one dimensional and two dimensional arrays with proper example.</span>
+#### <span style="color:blue;">18. Explain one dimensional and two dimensional arrays with proper example.</span>
 1. An array is data structure which can hold multiple elements of same data type.
 2. When a variable is declared as array then the variable can contain fixed number of elements of same data type. The number of elements to be contained should be defined at the time of declaration.
 3. **One dimensional array:** It is the simplest form of array, this type of array does not contain any array or collection as it's element. It has single rows and n number of columns. The elements can be accessed by single index.
@@ -481,7 +481,7 @@ namespace Example{
 }
 ```
 
-##### <span style="color:blue;">19. List various reference types in C#. Also explain boxing operation with example.</span>
+#### <span style="color:blue;">19. List various reference types in C#. Also explain boxing operation with example.</span>
 1. Variables of Reference Types stores reference to data which means reference type variable stores memory address where actual data resides and not the data.
 2. Reference type includes:
 	- **Classes:** It is a blueprint for creating objects, it defines field, properties, methods and events.
@@ -513,7 +513,7 @@ namespace Example{
 	}
 	```
 
-##### <span style="color:blue;">20. Elaborate array memory representation with an example.</span>
+#### <span style="color:blue;">20. Elaborate array memory representation with an example.</span>
 1. Array is a data structure that holds elements of same type in a continuous block of memory.
 2. An array is of fixed sized i.e it only contains a fix number of elements and it can contain elements of same type, the size and type of element is defined at the time of declaration.
 3. The memory assignment is done using a simple calculation, consider an array of 5 int, since int requires 4 byte, 5 int would require (5x4) bytes i.e 20 bytes.
@@ -546,7 +546,7 @@ class Program
 }
 ```
 
-##### <span style="color:blue;">21. Explain any 5 properties/methods of Math Class.</span>
+#### <span style="color:blue;">21. Explain any 5 properties/methods of Math Class.</span>
 1. The Math Class in C# provides a collection of Static Methods and Constants for performing mathematical operations.
 2. Below is a list of common properties and methods of Math Class:
 	1. **Math.Abs(Value):**
@@ -581,7 +581,7 @@ class Program
 	3. **Math.Tau:**
 		Represents mathematical constant tau, which is 2xPI, it is sometimes used instead of PI in circle related calculations.
 
-##### <span style="color:blue;">21. Explain static members and partial class.</span>
+#### <span style="color:blue;">21. Explain static members and partial class.</span>
 **Static Members:**
 1. Static members in C# are associated with the type itself instead of the instance.
 2. We can define class members as static using the static keyword. When we declare a member of a class as static, it means no matter how many objects of the class are created, there is only one copy of the static member.
@@ -599,7 +599,7 @@ class Program
 3. We can separate different aspects of the class into different files. For example, we might separate methods and properties from the class’s event handlers.
 4. Partial classes are often used to separate auto-generated code (such as code generated by designers or tools) from user-written code. This helps in keeping the auto-generated code untouched and more manageable.
 5. Partial methods are methods defined in a partial class that are optional. They allow us to define a method signature in one part of the class and implement it in another part.
-##### <span style="color:blue;">22. Explain static constructor and copy constructor with examples.</span>
+#### <span style="color:blue;">22. Explain static constructor and copy constructor with examples.</span>
 **Static Constructor:**
 1. A **static constructor** is a special constructor in C# that initializes static members of a class. It is called automatically by the runtime before any static members of the class are accessed or any static methods are called or when the first instance of the class is created.
 2. Static constructors have same name as class, they cannot have parameters and they are defined without any access modifier.
@@ -652,7 +652,7 @@ public class Program{
 }
 ```
 
-##### <span style="color:blue;">23. What is delegates. Explain multicast delegates with an example.</span>
+#### <span style="color:blue;">23. What is delegates. Explain multicast delegates with an example.</span>
 1. In C#, delegates are types that can hold references to methods with matching signatures
 2. Delegates are similar to function pointers in C and C++, but they are more secure and type-safe. They are often used to implement callbacks and events
 3. The first step when using a delegate is to define its signature. The signature is a combination of several pieces of information about a method: its return type, the number of parameters it has, and the data type of each parameter.
