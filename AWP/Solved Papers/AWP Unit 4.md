@@ -1,5 +1,5 @@
-##### <span style="color:blue;">1. Explain the data provider model with ADO.Net with diagram.</span>
-![[Screenshots/ADO.png]]
+#### <span style="color:blue;">1. Explain the data provider model with ADO.Net with diagram.</span>
+![ADO.png](https://github.com/ggk570/Bsc-IT-Sem-4/blob/main/AWP/Solved%20Papers/Screenshots/ADO.png)
 1. ADO.NET is a data access technology from Microsoft that is part of the .NET Framework. It provides a set of classes and interfaces for interacting with a variety of data sources, such as databases, XML files, and more.
 2. The data provider model is a fundamental concept in ADO.NET, acting as the bridge between your application and various data sources. It provides a way to connect to different types of data sources, execute commands, and retrieve results in a consistent manner.
 3. The different data providers in ADO.Net includes:
@@ -24,7 +24,7 @@
 9. To read data we can use DataReader object, using this we can can iterate through the results in a forward-only manner. For disconnected scenarios we can use a DataAdapter object to fill DataSet.
 10. With DataSet and DataTable object we can insert, update or delete rows. Any changes to the dataset can be pushed to database using DataAdapter's Update method.
 
-##### <span style="color:blue;">2. Write a short note on connected and disconnected data access.</span>
+#### <span style="color:blue;">2. Write a short note on connected and disconnected data access.</span>
 **Connected Data Access:**
 1. In connected data access, an application maintains an active connection to the database for the duration of data operations.
 2. This model is often used when immediate, real-time data interaction is required.
@@ -42,7 +42,7 @@
 6. Changes can be made to dataset or datatable, these changes can be commited to database at any time by connecting to the database and then disconnecting once the task is finished. Also changes can be sent back to the database in batches, optimizing performance.
 7. Since it is not connection oriented it reduces the load on database server. Thus it is more scalable, reliable especially in scenarios with many users.
 
-##### <span style="color:blue;">3. Write a brief explanantion of the types of Asp.Net data binding.</span>
+#### <span style="color:blue;">3. Write a brief explanantion of the types of Asp.Net data binding.</span>
 1. Data binding in ASP.NET is the process of connecting a data source to a control, such as a list box or data grid. This connection allows data to be displayed in the control, and any changes to the data are automatically reflected in the user interface.
 2. Every ASP.NET web form control inherits the DataBind method from its parent Control class, which gives it an inherent capability to bind data to at least one of its properties.
 3. We can connect these controls to ADO.NET components such as a DataView, DataSet, or DataViewManager or even arrays, lists at design-time as well as at run-time.
@@ -130,7 +130,7 @@
 	}
 	```
 
-##### <span style="color:blue;">4. Explain page life cycle with data binding.</span>
+#### <span style="color:blue;">4. Explain page life cycle with data binding.</span>
 1. The ASP.NET page life cycle is a series of events that occur from the time a page is requested until it is fully rendered and sent to the client.
 2. Key stages of Asp.Net page life cycle:
 - **Page Request:** The life cycle begins when a request for a page is received by the server.
@@ -141,7 +141,7 @@
 - **Rendering:** The page calls the `Render` method for each control, generating the HTML to be sent to the client. At this point, the view state is not accessible for data binding. Controls are rendered based on their current state, and data binding should have already been completed.
 - **Unload:** The page and its controls are cleaned up. This is the final stage where resources can be released, and any final processing can occur.
 
-##### <span style="color:blue;">5. Explain gridview control and its method for defining columns.</span>
+#### <span style="color:blue;">5. Explain gridview control and its method for defining columns.</span>
 1. The GridView control displays data in a table format with rows and columns, where each column represents a field and each row represents a record.
 2. The [GridView](https://learn.microsoft.com/en-us/dotnet/api/system.web.ui.webcontrols.gridview?view=netframework-4.8.1) control supports the following features:
 - Binding to data source controls, such as [SqlDataSource](https://learn.microsoft.com/en-us/dotnet/api/system.web.ui.webcontrols.sqldatasource?view=netframework-4.8.1).
@@ -176,7 +176,7 @@
 | TemplateField     | Displays user-defined content for each item in the [GridView](https://learn.microsoft.com/en-us/dotnet/api/system.web.ui.webcontrols.gridview?view=netframework-4.8.1) control according to a specified template. This column field type enables you to create a custom column field. |
 6. To define a column field collection declaratively, first add opening and closing `<Columns>` tags between the opening and closing tags of the [GridView](https://learn.microsoft.com/en-us/dotnet/api/system.web.ui.webcontrols.gridview?view=netframework-4.8.1) control. Next, list the column fields that you want to include between the opening and closing `<Columns>` tags. The columns specified are added to the [Columns](https://learn.microsoft.com/en-us/dotnet/api/system.web.ui.webcontrols.gridview.columns?view=netframework-4.8.1) collection in the order listed. The [Columns](https://learn.microsoft.com/en-us/dotnet/api/system.web.ui.webcontrols.gridview.columns?view=netframework-4.8.1) collection stores all the column fields in the control and enables you to programmatically manage the column fields in the [GridView](https://learn.microsoft.com/en-us/dotnet/api/system.web.ui.webcontrols.gridview?view=netframework-4.8.1) control.
 
-##### <span style="color:blue;">6. Write a short note on detailsview.</span>
+#### <span style="color:blue;">6. Write a short note on detailsview.</span>
 1. DetailsView control used to display a single database record of table layout in ASP.Net. Means it works with a single data item at a time.
 2. DetailsView control allows users to display, edit, delete and insert records.
 3. **Properties of DataView:**
@@ -188,7 +188,7 @@
 - **DefaultMode:** Sets the initial mode of the DetailsView (e.g., `ReadOnly`, `Edit`, or `Insert`).
 4. To explicitly declare the row fields for a [DetailsView](https://learn.microsoft.com/en-us/dotnet/api/system.web.ui.webcontrols.detailsview?view=netframework-4.8.1) control, first set the [AutoGenerateRows](https://learn.microsoft.com/en-us/dotnet/api/system.web.ui.webcontrols.detailsview.autogeneraterows?view=netframework-4.8.1) property to `false`. Next, add opening and closing `<Fields>` tags between the opening and closing tags of the [DetailsView](https://learn.microsoft.com/en-us/dotnet/api/system.web.ui.webcontrols.detailsview?view=netframework-4.8.1) control. Finally, list the row fields that you want to include between the opening and closing `<Fields>` tags.
 
-##### <span style="color:blue;">7. Explain:</span>
+#### <span style="color:blue;">7. Explain:</span>
 **ExecuteNonQuery:**
 1. The `ExecuteNonQuery` is a crucial method in ADO.NET, specifically within the `Command` class (such as `SqlCommand` or `OleDbCommand`). It is used to execute SQL statements that do not return any data, such as:
 - **INSERT** statements (to add new records)
@@ -304,7 +304,7 @@ class Program
 }
 ```
 
-##### <span style="color:blue;">8. Explain SqlDataSource Control.</span>
+#### <span style="color:blue;">8. Explain SqlDataSource Control.</span>
 1. The SqlDataSource control can be used to access and modify data directly from a relational database, including Microsoft SQL Server, Microsoft Access, Oracle, MySQL, and others.
 2. With this control we can use declarative data binding to perform database operations like update, insert, delete or query.
 3. It simplifies the process of working with databases by allowing developers to manage data operations through properties and methods rather than writing extensive code.
@@ -344,7 +344,7 @@ class Program
 </asp:GridView>
 ```
 
-##### <span style="color:blue;">9. Difference between DetailsView and FormView.</span>
+#### <span style="color:blue;">9. Difference between DetailsView and FormView.</span>
 
 | DetailsView                                                                                                                                                                           | FormView                                                                                                                                                                                                                                               |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -354,7 +354,7 @@ class Program
 | 4. It is simpler to implement                                                                                                                                                         | 4. It requires more setup.                                                                                                                                                                                                                             |
 | 5. It is less flexible than FormView.                                                                                                                                                 | 5. It provides a great flexibility to use controls and data.                                                                                                                                                                                           |
 | 6. It can be autogenerated.                                                                                                                                                           | 6. As it is template drive it cannot be autogenerated.                                                                                                                                                                                                 |
-##### <span style="color:blue;">10. Difference between DataAdapter and DataReader.</span>
+#### <span style="color:blue;">10. Difference between DataAdapter and DataReader.</span>
 
 | DataAdapter                                                                                                                                                     | DataReader                                                                                                                             |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
@@ -365,7 +365,7 @@ class Program
 | 5. With dataadapter we can read any data at any time.                                                                                                           | 5. It is forward read only which means if we have already read one record then we cannot read it again, we can only read next records. |
 | 6. Data is retrieved in a batch                                                                                                                                 | 6. Data is read one at a time.                                                                                                         |
 | 7. Generally slower than `DataReader` for retrieving data due to its overhead of filling and managing the `DataSet`.                                            | 7. Faster than `DataAdapter` because it has less overhead and works directly with the database connection.                                                                                                                                    |
-##### <span style="color:blue;">11. Explain SqlConnection class with an example.</span>
+#### <span style="color:blue;">11. Explain SqlConnection class with an example.</span>
 1. The `SqlConnection` class in ASP.NET is part of the `System.Data.SqlClient` namespace and is used to establish a connection to a SQL Server database.
 2. A SqlConnection object represents a unique session to a SQL Server data source. With a client/server database system, it is equivalent to a network connection to the server.
 3. SqlConnection class object can be used to open or close a connection to database.
@@ -413,7 +413,7 @@ public void FetchData()
 }
 ```
 
-##### <span style="color:blue;">12. Difference between DataSet and DataReader.</span>
+#### <span style="color:blue;">12. Difference between DataSet and DataReader.</span>
 
 | DataSet                                                                                                     | DataReader                                                                                   |
 | ----------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
@@ -424,7 +424,7 @@ public void FetchData()
 | 5. DataSet is typically slower in performance as compared to DataReader.                                    | 5. DataReader is faster in performance because it is connected, forward only stream of data. |
 | 6. DataSet is complex but allows more features such as data relations and constraints.                      | 6. DataReader is much simpler than DataSet and lacks few features.                           |
 | 7. We can access any data at any time with dataset.                                                         | 7. It provides forward-only read access, meaning it reads data as one record at a time.      |
-##### <span style="color:blue;">13. Write C# code to insert data in database table. Write comments wherever required.</span>
+#### <span style="color:blue;">13. Write C# code to insert data in database table. Write comments wherever required.</span>
 ```
 using System;
 using System.Data;
@@ -478,7 +478,7 @@ class Program
 }
 ```
 
-##### <span style="color:blue;">14. What is the use of DataSource control? Explain various data sources in Asp.Net</span>
+#### <span style="color:blue;">14. What is the use of DataSource control? Explain various data sources in Asp.Net</span>
 1. Data source controls that allow you to work with different types of data sources such as a database, an XML file, or a middle-tier business object. Data source controls connect to and retrieve data from a data source and make it available for other controls to bind to, without requiring code.
 2. These controls abstract the complexity of data access and allow developers to easily connect to various data sources and manage data-bound controls.
 3. Common Uses of DataSource Controls:
@@ -494,7 +494,7 @@ class Program
 	5. **SiteMapDataSource:** It provides access to a site map for navigation purposes. It is used primarily for building menus or breadcrumbs based on the defined site map.
 	6. **EntityDataSource:** Simplifies data binding for Entity Framework entities.
 
-##### <span style="color:blue;">15. Write a code to display data from a table named Students(RollNo, Name, Marks) and display on gridview control when page is loaded.</span>
+#### <span style="color:blue;">15. Write a code to display data from a table named Students(RollNo, Name, Marks) and display on gridview control when page is loaded.</span>
 **Web.config**
 ```
 <configuration>
@@ -559,7 +559,7 @@ public partial class Students : System.Web.UI.Page
 }
 ```
 
-##### <span style="color:blue;">16. Write any three similarities between formview and detailsview. Explain about item templates in formview.</span>
+#### <span style="color:blue;">16. Write any three similarities between formview and detailsview. Explain about item templates in formview.</span>
 **Similarities between FormView and DetailsView contro:**
 1. Both FormView and DetailsView are data-bound controls in ASP.NET, allowing them to display data from a data source. They can be bound to various types of data sources, such as databases, XML files, or collections.
 2. Both controls support multiple modes for displaying data. They can show data in read-only mode, edit mode, and insert mode, making it easy to manage data operations.
@@ -569,7 +569,7 @@ public partial class Students : System.Web.UI.Page
 2. We can customize the layout and presentation of the data fields within this template.
 3. There also exists **EditItemControl** in FormView control that allows to define layout for each item in edit mode.
 
-##### <span style="color:blue;">17. Explain databinding with a dictionary collection.</span>
+#### <span style="color:blue;">17. Explain databinding with a dictionary collection.</span>
 1. Databinding is a process in which a data source like collection, database, xml etc is bind to data bound controls like gridview, listview etc to display or edit the data.
 2. Example:
 **Default.aspx**
@@ -625,7 +625,7 @@ namespace GridView
 }
 ```
 
-##### <span style="color:blue;">18. Explain various style properties of GridView control.</span>
+#### <span style="color:blue;">18. Explain various style properties of GridView control.</span>
 1. The `GridView` control in ASP.NET provides several style properties that allow you to customize its appearance.
 2. Some of the style properties are:
 	1. **GridLines:** Determines the visibility of grid lines in the GridView. It can support values like None, Horizontal, Vertical, Both.
@@ -643,7 +643,7 @@ namespace GridView
 	8. **EmptyDataRowStyle:** Defines the style for the empty data row when no records are present. Styling is same as RowStyle.
 	9. **PagerStyle:** Styles the pager controls (if paging is enabled). Contains the same set of styling properties as defined with RowStyle.
 
-##### <span style="color:blue;">19. Briefly explain following features of GridView control.</span>
+#### <span style="color:blue;">19. Briefly explain following features of GridView control.</span>
 **Sorting**
 1. The sorting feature of the GridView control in ASP.NET allows users to reorder the rows displayed in the GridView based on the values of a specific column.
 2. Sorting can enhance user experience by enabling easier navigation through large datasets.
