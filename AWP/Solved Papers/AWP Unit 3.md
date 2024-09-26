@@ -1,4 +1,4 @@
-##### <span style="color:blue;">1. Explain predefined classes related to System.Exception.</span>
+#### <span style="color:blue;">1. Explain predefined classes related to System.Exception.</span>
 1. In ASP.NET and C#, exceptions are handled using a hierarchy of predefined classes under the `System.Exception` namespace
 2. Here’s a breakdown of some key predefined exception classes and their purposes
 	1. **System.Exception:** All exceptions are derive from this class. It provides properties like `Message`, `StackTrace`, and methods like `ToString()` for exception handling.
@@ -8,7 +8,7 @@
 		- **InvalidOperationException**: Thrown when a method call is invalid for the object's current state.
 	3. **System.ApplicationException:** This class is intended to be a base class for user-defined application exceptions. However, its usage is less common in modern applications, as developers often derive from `System.Exception` directly.
 
-##### <span style="color:blue;">2. What are server side state management techniques? Explain it.</span>
+#### <span style="color:blue;">2. What are server side state management techniques? Explain it.</span>
 1. State Management can be defined as the technique or the way by which we can maintain/store the state of the page or application until the User's Session ends.
 2. Server-side state management in ASP.NET refers to techniques for preserving user and application state across multiple requests. This is essential for web applications, as HTTP is stateless. For this type the state data is stored on server side.
 3. A web application can employ various methods to manage state.
@@ -17,7 +17,7 @@
 	2. **Application State:** Stores global data accessible to all users and sessions. It is stored in server memory. It stores information as a Dictionary Collection in key-value pairs. This value is accessible across the pages of the application/website. It is accessed via `HttpContext.Current.Application`. It's useful for storing application-wide settings or counters. The application state lasts for the life of the application and is shared among all users.
 	3. **Cache:** The cache is stored on the server side. It implements Page Caching and data caching. The cache is used to set expiration policies
 
-##### <span style="color:blue;">3. Illustrate use of cookies in asp.net application with a suitable example.</span>
+#### <span style="color:blue;">3. Illustrate use of cookies in asp.net application with a suitable example.</span>
 1. Cookies are used to store small amounts of data on the client’s browser, which can be sent back to the server with each request.
 2. Cookies provides us a way to manage state and other user specific configurations.
 3. We can create a cookie with HttpCookie object and set this cookie by using Response.Cookies object.
@@ -94,7 +94,7 @@ namespace Practice
 }
 ```
 
-##### <span style="color:blue;">4. What is theme? Explain Global Theme.</span>
+#### <span style="color:blue;">4. What is theme? Explain Global Theme.</span>
 1. In ASP.NET, a **theme** is a way to define a consistent look and feel for your web application.
 2. Themes allow you to apply a specific style across all pages of an application without having to manually apply styles to each page.
 3. This is done by defining styles, images, and other resources that can be reused throughout the application.
@@ -120,7 +120,7 @@ namespace Practice
 	3. Setting the themes programmatically, you are offering your users a quick and easy way to change the page to their likings. 
 	4. Themes allow you to improve the usability of your site by giving users with vision problems the option to select a high contrast theme with a large font size.
 
-##### <span style="color:blue;">5. What is Master Page? How is it utilized is asp.net.</span>
+#### <span style="color:blue;">5. What is Master Page? How is it utilized is asp.net.</span>
 1. A **Master Page** in ASP.NET is a template that defines a common layout for multiple pages in an application.
 2. A single master page defines the look and feel and standard behavior that we want for all of the pages (or a group of pages) in our application.
 3. We can then create individual content pages that contain the content we want to display.
@@ -163,7 +163,7 @@ namespace Practice
 ```
 10. When the application is run, ASP.NET combines the Master Page and the content from the content pages to generate a complete HTML page.
 
-##### <span style="color:blue;">6. Explain Page Tracing in Asp.Net with an example.</span>
+#### <span style="color:blue;">6. Explain Page Tracing in Asp.Net with an example.</span>
 1. Page tracing enables you to view diagnostic information about a single request for an ASP.NET page.
 2. It enables you to follow a page's execution path, display diagnostic information at run time, and debug your application. ASP.NET tracing can be integrated with system-level tracing to provide multiple levels of tracing output in distributed and multi-tier applications.
 3. We can control whether tracing is enabled or disabled for individual pages. If tracing is enabled, when the page is requested, ASP.NET appends to the page a series of tables containing execution details about the page request. Tracing is disabled by default in an ASP.NET application.
@@ -210,7 +210,7 @@ namespace Test{
 }
 ```
 
-##### <span style="color:blue;">7. Write a short note on querystring state management technique.</span>
+#### <span style="color:blue;">7. Write a short note on querystring state management technique.</span>
 1. **QueryString** is a state management technique in ASP.NET (and web development in general) that involves passing data between web pages through the URL.
 2. Query strings are separated from rest of the url using **?** character, the data in query string is stored in key=value format. Each key=value pair is separated from each other using **&** character.
 3. Since HTTP is a stateless protocol, query strings help retain information across different requests without storing it on the server.
@@ -225,7 +225,7 @@ protected void Page_Load(object sender, EventArgs e)
 }
 ```
 
-##### <span style="color:blue;">8. Develop an asp.net web application to count total number of visitors visited to an asp.net website.</span>
+#### <span style="color:blue;">8. Develop an asp.net web application to count total number of visitors visited to an asp.net website.</span>
 1. To create an asp.net web application that maintains the count of total number of visitors visited to our website, we need to use application and session events.
 2. For this we need to add global.asax file, at the Application_Start event we need to initialize a visitorcount application state variable and need to increment it's value whenever a new session is started i.e at Session_Start event.
 3. Program:
@@ -276,7 +276,7 @@ myNamespace{
 }
 ```
 
-##### <span style="color:blue;">9. What is CSS? List and explain types of css.</span>
+#### <span style="color:blue;">9. What is CSS? List and explain types of css.</span>
 1. **CSS (Cascading Style Sheets)** is a stylesheet language used to describe the presentation of a document written in HTML
 2. CSS is essential for controlling the layout, design, and visual appearance of web pages.
 3. **Types of CSS:**
@@ -318,7 +318,7 @@ myNamespace{
 	</head>
 	```
 
-##### <span style="color:blue;">10. What is theme? Explain how to create and use theme.</span>
+#### <span style="color:blue;">10. What is theme? Explain how to create and use theme.</span>
 1. In ASP.NET, a **theme** is a way to define a consistent look and feel for your web application.
 2. Themes allow you to apply a specific style across all pages of an application without having to manually apply styles to each page.
 3. This is done by defining styles, images, and other resources that can be reused throughout the application.
@@ -372,7 +372,7 @@ body {
 ```
 10. Now build the application and visit the page in web browser
 
-##### <span style="color:blue;">11. Describe the use of multiple catch statements in exception handling using example.</span>
+#### <span style="color:blue;">11. Describe the use of multiple catch statements in exception handling using example.</span>
 1. In C#, multiple `catch` statements can be used to handle different types of exceptions that may occur in a `try` block.
 2. This allows us to respond differently depending on the type of exception encountered, improving error handling and providing more meaningful feedback to users or developers.
 3. The general syntax for multiple catch statements is:
@@ -430,7 +430,7 @@ class Program
 }
 ```
 
-##### <span style="color:blue;">12. Explain the events in global.asax with respect to state management.</span>
+#### <span style="color:blue;">12. Explain the events in global.asax with respect to state management.</span>
 1. In ASP.NET, the `Global.asax` file, also known as the application file, is used to handle application-level events and manage application-wide state.
 2. It can contain event handlers for various application lifecycle events that are critical for managing state and resources throughout the application's lifetime.
 3. Here are the main events found in `Global.asax` that relate to state management:
@@ -465,7 +465,7 @@ void Application_End(object sender, EventArgs e)
 </script>
 ```
 
-##### <span style="color:blue;">13. What is URL Mapping? How is url mapping and routing implemented in asp.net?</span>
+#### <span style="color:blue;">13. What is URL Mapping? How is url mapping and routing implemented in asp.net?</span>
 1. **URL Mapping** refers to the process of associating a specific URL with a particular resource, such as a web page, API endpoint, or handler in a web application. This technique helps create more user-friendly URLs
 2. In ASP.NET, URL mapping is typically handled through **routing**, which allows developers to define how incoming URLs should be processed and which resources should be returned.
 3. Routing can help to create clean, readable URLs that map to server-side logic.
@@ -490,7 +490,7 @@ public class Global : HttpApplication
 ```
 6. The above setup maps the URL `/home` to `Default.aspx` and `/about` to `About.aspx`. Users can access these pages using clean URLs instead of the default ASP.NET file-based structure.
 
-##### <span style="color:blue;">14. What is cross page posting? Explain with an example.</span>
+#### <span style="color:blue;">14. What is cross page posting? Explain with an example.</span>
 1. **Cross Page Posting** in ASP.NET allows a form on one page to post its data to another page rather than to the page that contains the form.
 2.  It can be useful for creating multi-page forms that gather information on each page.
 3. By default, buttons and other controls that cause a postback on an ASP.NET Web page submit the page back to itself. However with cross page posting, clicking such controls sends the data to a specified page.
@@ -556,7 +556,7 @@ public partial class TargetPage : Page
 }
 ```
 
-##### <span style="color:blue;">15. What is user defined exception. Explain with example</span>
+#### <span style="color:blue;">15. What is user defined exception. Explain with example</span>
 1. A **user-defined exception** in ASP.NET is a custom exception class inherited from System.Exception class that you create to handle specific error conditions that may arise in your application.
 2. By defining your own exceptions, you can provide more meaningful error messages and context, which enhances error handling and debugging.
 3. To create a custom exception first we need to create new class that inherits System.Exception class.
