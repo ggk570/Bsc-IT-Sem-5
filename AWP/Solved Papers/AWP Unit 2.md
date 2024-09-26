@@ -1,4 +1,4 @@
-##### <span style="color:blue;">1. Explain exception handling mechanism in C#.</span>
+#### <span style="color:blue;">1. Explain exception handling mechanism in C#.</span>
 1. An exception is defined as an event that occurs during the execution of a program that is unexpected by the program code.  The actions to be performed in case of occurrence of an exception is not known to the program.
 2. In such cases we can use exception handling to handle runtime errors in a controlled manner, allowing your program to continue operating or to terminate gracefully. It helps in managing unexpected situations, ensuring that errors do not cause the application to crash unexpectedly.
 3. In C# an exception is represented by an object representing an error or an unexpected event that occurs during program execution.
@@ -49,7 +49,7 @@ public class Program{
 }
 ```
 
-##### <span style="color:blue;">2. Enumerate and ellaborate on the different file types accessible within an ASP.Net Application.</span>
+#### <span style="color:blue;">2. Enumerate and ellaborate on the different file types accessible within an ASP.Net Application.</span>
 1. In an ASP.NET application, various file types are used to manage different aspects of the application. Each type of file serves a specific purpose, contributing to the application's functionality, configuration, and presentation.
 2. Below is the list of file types in ASP.Net:
 	1. **.aspx:** Represents the UI (user interface) of the application in ASP.NET Web Forms. It contains HTML markup and server-side controls.
@@ -61,7 +61,7 @@ public class Program{
 	7. **.css:** Defines styles and layout of web pages for front end code.
 	8. **.dll:** Dynamic link libraries, contains the compiled code that can be used by application or other applications. These are usually placed in bin folder.
 
-##### <span style="color:blue;">3. What is view state? Give advantages and disadvantages of view state.</span>
+#### <span style="color:blue;">3. What is view state? Give advantages and disadvantages of view state.</span>
 1. View State is used to store user data on page at the time of post back of web page. It does not hold the controls, it holds the values of controls.
 2. **View State** is a mechanism that allows the state of server-side controls to be preserved across postbacks. Essentially, it helps in maintaining the values of controls and other data between server round-trips.
 3. The View State is stored in a hidden field on the page and is sent back and forth between the client and server during postbacks.
@@ -79,7 +79,7 @@ public class Program{
 4. Debugging issues related to View State can be complex, as the state information is serialized into a string format and can be difficult to interpret.
 5. Since View State is stored on the client side, any tampering or manipulation by the client can potentially lead to security issues, even though ASP.NET provides mechanisms to mitigate these risks.
 
-##### <span style="color:blue;">4. Provide a concise overview of application events.</span>
+#### <span style="color:blue;">4. Provide a concise overview of application events.</span>
 1. In ASP.NET, application events are a set of events that occur during the lifecycle of an application, allowing you to execute code at specific points.
 2. Basic ASP.NET features such as session state and authentication use application events to plug into the ASP.NET processing pipeline.
 3. Global.asax allows us to write event handlers that react to global events in web applications. Global.asax files are never called directly by the user, rather they are called automatically in response to application events.
@@ -92,7 +92,7 @@ public class Program{
 	6. **Session_End:** This event is fired when user's session expires or they leave application website.
 	7. **Application_Error:** This occurs in response to an unhandled error.
 
-##### <span style="color:blue;">5. Explain ListBox control with properties and methods</span>
+#### <span style="color:blue;">5. Explain ListBox control with properties and methods</span>
 1. ListBox is a control used to display a list with some items on a web page. Not only it displays the list but it also allows users to select an item from this list and submit the data in postback request.
 2. The items in this list are provided using ListItem control.
 3. ListBox is created by using below syntax:
@@ -121,7 +121,7 @@ public class Program{
 	5. **ListBox1.Items.FindByValue(value):** Search for an item with specified value.
 	6. **ListBox1.DataBind():** Binds the listbox to its datasource, updating the items based on datasource, datatextfield and datavaluefield properties.
 
-##### <span style="color:blue;">6. Write Short note on adrotator and calendar control.</span>
+#### <span style="color:blue;">6. Write Short note on adrotator and calendar control.</span>
 **AdRotator:**
 1. AdRotator control is used in asp.net to display advertisement banner on a web page.
 2. AdRotator controls can be used to display a rotating series of advertisements or images on a web page. It allows us to present different images or content in a slide-show format, providing a dynamic and visually engaging way to showcase content.
@@ -183,7 +183,7 @@ protected void Calendar1_SelectionChanged(object sender, EventArgs e)
 }
 ```
 
-##### <span style="color:blue;">7. What is range validator? Describe any four properties of it.</span>
+#### <span style="color:blue;">7. What is range validator? Describe any four properties of it.</span>
 1. The **RangeValidator** control in ASP.NET is used to validate that a user’s input falls within a specified range of values.
 2. It is commonly used in web forms to ensure that numeric inputs, dates, or other data types fall within a certain range, helping to enforce data integrity and improve user experience.
 3. Asp server controls by default don't allow values to be accepted in particular range, the developer has to manually write code for it. E.g An input field where a user can specify age, but the user can insert any values age like -45 which is invalid. RangeValidator control will save the developer to write few lines of validation code instead it does all the task in few steps.
@@ -208,7 +208,7 @@ protected void Calendar1_SelectionChanged(object sender, EventArgs e)
                     EnableClientScript="true" />
 ```
 
-##### <span style="color:blue;">8. Write a short note on asp.net page lifecycle.</span>
+#### <span style="color:blue;">8. Write a short note on asp.net page lifecycle.</span>
 1. When an ASP.NET page runs, the page goes through a life cycle in which it performs a series of processing steps. These include initialization, instantiating controls, restoring and maintaining state, running event handler code, and rendering.
 2. If we as a developer develop custom controls we need to be familiar with page life cycle in order to correctly initialize controls, populate properties with view state data and run control behaviour code.
 3. The following points discuss about various stages of asp.net page lifecycle:
@@ -220,7 +220,7 @@ protected void Calendar1_SelectionChanged(object sender, EventArgs e)
 	6. **Rendering:** The `Render` method is called for each control, generating the HTML markup that will be sent to the client's browser. This is where the final output of the page is created. Just before calling the Render method, view state is saved for the page and all controls.
 	7. **Unload:** After the page has been fully rendered and sent to the client, the `Unload` event occurs. This is where you can clean up resources and perform any final operations before the page is discarded.
 
-##### <span style="color:blue;">9. What is meant by validation of data. How to use Asp.Net validation control to validate user input?</span>
+#### <span style="color:blue;">9. What is meant by validation of data. How to use Asp.Net validation control to validate user input?</span>
 1. **Data validation** is the process of ensuring that user input is accurate, complete, and within expected ranges before it is processed or stored.
 2. This is crucial for maintaining data integrity, improving user experience, and protecting against security threats such as SQL injection and cross-site scripting (XSS).
 3. Validation controls can be of two type:
@@ -296,7 +296,7 @@ namespace Practice
 </appSettings>
 ```
 
-##### <span style="color:blue;">10. Explain any two Site Navigation Controls in asp.net</span>
+#### <span style="color:blue;">10. Explain any two Site Navigation Controls in asp.net</span>
 1. In ASP.Net site navigation feature provides a consistent way for users to navigate our site. As our site grows, and as we move pages around in the site, it can become difficult to manage all of the links. ASP.NET site navigation enables us to store links to all of our pages in a central location, and render those links in lists or navigation menus on each page by including a specific Web server control.
 2. Site maps are XML files which are mainly used to describe the logical structure of the web application. It defines the layout of all pages in web application and how they relate to each other. Whenever you want you can add or remove pages to your site map there by managing navigation of website efficiently. Site map files are defined with .sitemap extension. `<sitemap>` element is the root node of the sitemap file.
 3. Below are a list of Site Navigation Controls used in asp.net:
@@ -315,7 +315,7 @@ namespace Practice
 	</asp:Menu>
 	```
 
-##### <span style="color:blue;">11. What is postback? Explain IsPostBack property with suitable example.</span>
+#### <span style="color:blue;">11. What is postback? Explain IsPostBack property with suitable example.</span>
 1. In ASP.NET, **postback** refers to the process where a web page sends data back to the server for processing. This typically occurs when a user interacts with controls on the page, such as buttons or dropdowns, which triggers a server-side event, causing the page to reload.
 2. It's a round trip between the browser and the server, and back to the browser.
 3. The `IsPostBack` property is a Boolean property of the `Page` class that indicates whether the page is being loaded in response to a postback or if it is being loaded for the first time.
@@ -353,7 +353,7 @@ public partial class Default : System.Web.UI.Page{
 }
 ```
 
-##### <span style="color:blue;">12. What is an event? How is an event handler added.</span>
+#### <span style="color:blue;">12. What is an event? How is an event handler added.</span>
 1. An event is a message sent by an object to signal the occurrence of an action. The action can be caused by user interaction, such as a button click, or it can result from some other program logic, such as changing a property's value. The object that raises the event is called the _event sender_.
 2. The event sender doesn't know which object or method will receive (handle) the events it raises. The event is typically a member of the event sender; for example, the [Click](https://learn.microsoft.com/en-us/dotnet/api/system.web.ui.webcontrols.button.click#system-web-ui-webcontrols-button-click) event is a member of the [Button](https://learn.microsoft.com/en-us/dotnet/api/system.web.ui.webcontrols.button) class, and the [PropertyChanged](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged.propertychanged#system-componentmodel-inotifypropertychanged-propertychanged) event is a member of the class that implements the [INotifyPropertyChanged](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged) interface.
 3. Events allow developers to define specific responses to user interactions, enhancing interactivity and functionality within web applications.
@@ -361,7 +361,7 @@ public partial class Default : System.Web.UI.Page{
 5. To add an event handler we have to create a method that matches the signature of the event.
 6. After creating a method we have to attach our method to the event, so that whenever the event occurs our method is called.
 
-##### <span style="color:blue;">13. Write a short note on list controls in asp.net.</span>
+#### <span style="color:blue;">13. Write a short note on list controls in asp.net.</span>
 1. In ASP.NET, **list controls** are used to display a collection of items to users, allowing them to select one or multiple options
 2. These controls enhance user interaction by providing a structured way to present choices.
 3. Some of most commonly used list controls in asp.net are:
@@ -381,7 +381,7 @@ public partial class Default : System.Web.UI.Page{
 
 ```
 
-##### <span style="color:blue;">14. Explain the need of User Control. How it is created and used.</span>
+#### <span style="color:blue;">14. Explain the need of User Control. How it is created and used.</span>
 1. A user control is a kind of composite control that works much like an ASP.NET Web page—you can add existing Web server controls and markup to a user control, and define properties and methods for the control. You can then embed them in ASP.NET Web pages, where they act as a unit.
 2. User controls are similar to a normal asp.net page, however the server controls and other html goes in .ascx file and the codebehind file is .cs file. The usercontrol page is not directly accessible as other .aspx page. The usercontrols are used as a component in other pages to create User Interface.
 3. **Need of User Controls:**
@@ -438,7 +438,7 @@ public partial class Default : System.Web.UI.Page{
 	}
 	```
 
-##### <span style="color:blue;">15. What are .aspx files? Explain code behind class in detail.</span>
+#### <span style="color:blue;">15. What are .aspx files? Explain code behind class in detail.</span>
 1. **.aspx files** are ASP.NET web page files that contain markup, which typically includes HTML, CSS, and server-side controls. They are used to create dynamic web pages in ASP.NET applications.
 2. When a user requests an .aspx page, the ASP.NET engine processes the page and generates HTML that is sent to the client’s browser.
 3. Key Features of .aspx Files:
@@ -456,7 +456,7 @@ public partial class Default : System.Web.UI.Page{
 	6. **Accessing Data**: Code-behind classes often contain logic for accessing databases, processing user input, and managing session state.
 	7. **Data Binding**: You can bind data to controls (like GridView, DropDownList) in the code-behind.
 
-##### <span style="color:blue;">16. Explain each of the following in brief.</span>
+#### <span style="color:blue;">16. Explain each of the following in brief.</span>
  **Web Forms**
 1. ASP.NET Web Forms is a programming model that lets you create web applications and websites using the ASP.NET framework.
 2. Web Forms are web pages built on the ASP.NET Technology. It executes on the server and generates output to the browser. It is compatible to any browser to any language supported by .NET common language runtime. It is flexible and allows us to create and add custom controls.
@@ -491,7 +491,7 @@ public partial class Default : System.Web.UI.Page{
 4. You can make any last-minute changes to the properties of controls (e.g., setting visibility, updating text) that need to reflect the final state of the page.
 5. If you need to add or modify controls dynamically based on user input or application state, the PreRender event is the right place to do it.
 
-##### <span style="color:blue;">17. List any four category of server control. Explain common properties of web server controls.</span>
+#### <span style="color:blue;">17. List any four category of server control. Explain common properties of web server controls.</span>
 **Html Server Controls:**
 HTML server controls are standard HTML elements that have been enhanced to work with server-side code. They allow you to create simple, lightweight web pages with HTML markup while still leveraging the capabilities of ASP.NET. They are defined with **runat="server"** attribute.
 E.g input, form, div, span
@@ -508,7 +508,7 @@ E.g RequiredFieldValidator, RangeValidator
 **Rich Controls:**
 In addition to the preceding controls, the ASP.NET page framework provides a few, task-specific controls called rich controls. Rich controls are built with multiple HTML elements and contain rich functionality. Examples of rich controls are the Calendar control and the AdRotator control.
 
-##### <span style="color:blue;">18. Explain anatomy of a webform.</span>
+#### <span style="color:blue;">18. Explain anatomy of a webform.</span>
 1. A web form in ASP.NET is a key component for creating interactive web applications. It allows users to input data, which can then be processed by the server.
 2. Web form is comprised of few key elements:
 	1. **Page Directive:**
@@ -522,7 +522,7 @@ In addition to the preceding controls, the ASP.NET page framework provides a few
 	5. **CodeBehind File:**
 		The code-behind file contains the server-side logic for the web form. This is where event handlers are defined, and data processing occurs. The file typically has a `.aspx.cs` or `.aspx.vb` extension.
 
-##### <span style="color:blue;">19. Brief about Graphics class and it's any 5 methods.</span>
+#### <span style="color:blue;">19. Brief about Graphics class and it's any 5 methods.</span>
 1. The **Graphics** class in .NET is part of the `System.Drawing.dll` assembly and is used for drawing on various surfaces, such as forms, images, and controls. It provides methods to draw shapes, text, and images, making it a fundamental component for creating graphics in Windows applications.
 2. Graphics classes are System.Drawing, System.Text, System.Printing, System.Internal, System.imaging, System.Drawing2D and System.Design name spaces.
 3. The Graphics class encapsulates Graphics Device interface drawing surfaces. Before drawing any object we have to create surface using Graphics class
