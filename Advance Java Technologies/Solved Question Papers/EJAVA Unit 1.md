@@ -32,7 +32,7 @@
 	4. Managing changes in the database structure may require changes in all client applications, leading to increased maintenance overhead.
 
 #### <span style="color:blue;">3. Explain life cycle of servlet with a diagram.</span>
-![[servlet life cycle.png]]
+![servlet life cycle.png](https://github.com/ggk570/Bsc-IT-Sem-5/blob/main/Advance%20Java%20Technologies/Solved%20Question%20Papers/Images/servlet%20life%20cycle.png)
 1. A **Servlet** in Java is a server-side component that handles client requests and generates dynamic web content.
 2. It is a Java class that runs on a web server and is part of the Java EE (Enterprise Edition) specification.
 3. A servlet goes through a series of stages called as lifecycle, these stages govern how a servlet is created, initialized, processed, and destroyed within a servlet container (like Apache Tomcat). The lifecycle of servlet is managed by Servlet Container. 
@@ -49,7 +49,7 @@
 4. It allows execution of SQL statements, including SELECT, INSERT, UPDATE, DELETE, and more.
 5. JDBC manages connections to the database, allowing for efficient transaction control and resource management.
 6. JDBC supports retrieval of results in various formats, making it versatile for different application needs.
-**Architecture of JDBC:**
+###### **Architecture of JDBC:**
 ![Architecture of JDBC.jpg](https://github.com/ggk570/Bsc-IT-Sem-5/blob/main/Advance%20Java%20Technologies/Solved%20Question%20Papers/Images/Architecture%20of%20JDBC.jpg)
 1. **Application:** It is a java applet or a servlet that communicates with a data source.
 2. **JDBC API:** This layer includes classes and interfaces that Java developers use to connect to a database, send SQL statements, and process results. A few of the crucial interfaces and classes defined in the JDBC API are the following:
