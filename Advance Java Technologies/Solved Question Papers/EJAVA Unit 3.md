@@ -14,6 +14,7 @@
 | 10. Best for creating the user interface of web applications with dynamic content.                                         | 10. Best for processing requests, performing business logic, and handling data.                                                                                                                      |
 #### <span style="color:blue;">2. Explain life cycle of jsp with diagram.</span>
 ![JSP Life Cycle.png](https://github.com/ggk570/Bsc-IT-Sem-5/blob/main/Advance%20Java%20Technologies/Solved%20Question%20Papers/Images/JSP%20Life%20Cycle.png)
+
 The life cycle of JSP is as follows:
 1. **Translation:** When a jsp page is accessed for the first time, it is translated into a servlet by the JSP Container. The JSP container creates a servlet class that extends HttpServlet class and contains the code for the JSP Page.
 2. **Compilation:** The servlet class is then compiled into bytecode by the Java compiler.
