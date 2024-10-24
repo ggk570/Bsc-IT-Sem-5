@@ -50,7 +50,7 @@
 5. JDBC manages connections to the database, allowing for efficient transaction control and resource management.
 6. JDBC supports retrieval of results in various formats, making it versatile for different application needs.
 **Architecture of JDBC:**
-![[Architecture of JDBC.jpg]]
+![Architecture of JDBC.jpg](https://github.com/ggk570/Bsc-IT-Sem-5/blob/main/Advance%20Java%20Technologies/Solved%20Question%20Papers/Images/Architecture%20of%20JDBC.jpg)
 1. **Application:** It is a java applet or a servlet that communicates with a data source.
 2. **JDBC API:** This layer includes classes and interfaces that Java developers use to connect to a database, send SQL statements, and process results. A few of the crucial interfaces and classes defined in the JDBC API are the following:
 - Driver Interface
