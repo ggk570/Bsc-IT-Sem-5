@@ -69,7 +69,8 @@
 10. **High Level Abstraction:** EJBs abstract much of the complexity involved in building distributed applications. Developers can focus on business logic rather than underlying infrastructure concerns such as transactions and security.
 
 #### <span style="color:blue;">5. Explain lifecycle of message driver beans.</span>
-![[MDB Life Cycle.png]]
+![MDB Life Cycle.png](https://github.com/ggk570/Bsc-IT-Sem-5/blob/main/Advance%20Java%20Technologies/Solved%20Question%20Papers/Images/MDB%20Life%20Cycle.png)
+
 The lifecycle of **Message-Driven Beans (MDBs)** in Java EE (Jakarta EE) is managed by the EJB container, allowing them to process messages from a messaging service (typically JMS - Java Message Service).
 1. **Deployment:** Before an MDB can be used, it must be defined and deployed in the application server. This may involve using annotations (like `@MessageDriven`) or deployment descriptors (XML files). The EJB container sets up the MDB according to the specified configuration, including connection factories, destination queues/topics, and message selectors.
 2. **Instantiation:** The EJB container creates an instance of the MDB. This happens when the application is deployed or when the MDB is required to process messages. The container may maintain a pool of MDB instances to handle incoming messages efficiently, allowing for better resource management.
