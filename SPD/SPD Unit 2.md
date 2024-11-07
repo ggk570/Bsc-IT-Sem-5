@@ -1,5 +1,5 @@
 #### <span style="color:blue;">1. Describe the spiral model with the help of diagram and give the advantages and disadvantages of it.</span>
-![[Spiral Model.png]]
+![Spiral Model](https://github.com/ggk570/Bsc-IT-Sem-5/blob/main/SPD/Images/Spiral%20Model.png)
 1. The Spiral Model is a combination of the waterfall model and the iterative model. It provides support for **Risk Handling**.
 2. It provides a systematic and iterative approach to software development.
 3. In its diagrammatic representation, looks like a spiral with many loops. The exact number of loops of the spiral is unknown and can vary from project to project. Each loop of the spiral is called a ****phase**** of the software development process.
