@@ -184,7 +184,7 @@ The objectives of activity planning include:
 5. **Co-ordination:** When do the staff in different departments need to be available to work on a particular project and when do staff need to be transferred between projects? The project plan, particularly with large projects involving more than a single project team, provides an effective vehicle for communication and co-ordination among teams.
 
 #### <span style="color:blue;">8. Explain with a neat diagram the components in Lyytinen-Mathiassen-Ropponen risk framework.</span>
-![[Lyytinen-Mathiassen-Ropponen.png]]
+![Lyytinen-Mathiassen-Ropponen](https://github.com/ggk570/Bsc-IT-Sem-5/blob/main/SPD/Images/Lyytinen-Mathiassen-Ropponen.png)
 1. The Lyytinen-Mathiassen-Ropponen risk framework is a comprehensive approach to understanding and managing risks in software projects.
 2. It emphasizes the dynamic nature of risks and their interrelations. Here’s an explanation of its key components along with a simple diagram to illustrate the framework.
 	- **Actors:** Refers to all stakeholders involved in the project, including project managers, developers, clients, and users. Their roles, motivations, and interactions can significantly influence project success and risk levels.
