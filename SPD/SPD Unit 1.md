@@ -1,7 +1,9 @@
 #### <span style="color:blue;">1. Define project. Describe the project management life cycle with the help of diagram and state the W5HH principle.</span>
 1. A **project** is a endeavor undertaken to create a unique product, service, or result. It has a defined beginning and end, specific objectives, constraints (such as time, cost, and quality), and involves a set of activities that are coordinated to achieve the desired outcome.
 2. **Project Management Life Cycle:**
-	![[Project Management LifeCycle.png]]
+   
+	![Project Management Life Cycle](https://github.com/ggk570/Bsc-IT-Sem-5/blob/main/SPD/Images/Project%20Management%20LifeCycle.png)
+
 	1. **Initiation:** During the project initiation phase it is crucial for the champions of the project to develop a thorough understanding of the important characteristics of the project. This phase defines the project, problems and details on what need to be done.
 	2. **Planning:** The planning phase is the foundation for the project. This is when you detail all the work, how you plan on doing it and what resources you'll need to meet project goals.
 	   In this phase various plans are made :
@@ -13,7 +15,7 @@
 	3. **Execution:** In this phase we would be implementing the project plan by coordinating resources and activities.
 	4. **Monitoring and controlling:** This phase goes hand in hand with execution phase, it's about monitoring project's overall progress to see if we are meeting project's objectives and are on track.
 	5. **Closure:** It involves completing the release of all the required deliverables to the customer along with the Necessary documentation. Subsequently, all the project resources are released and supply agreements with the vendors are terminated and all the pending payments are completed.
-3. **W5HH Principle**
+4. **W5HH Principle**
 	1. The W5HH principle in software management exists to help project managers guide objectives, timelines, responsibilities, management styles, and resources.
 	2. The **W5HH principle** outlines a series of questions that can help project managers more efficiently manage software projects.
 	3. The series of questions are:
@@ -112,7 +114,7 @@
 	4. **Risk Monitoring:** In this technique, the risk is monitored continuously by reevaluating the risks, the impact of risk, and the probability of occurrence of the risk.
 
 #### <span style="color:blue;">5. Describe the main steps of step wise approach to planning software projects with the help of diagram.</span>
-![[Step-Wise Project Planning.png]]
+![Step-Wise Project Planning](https://github.com/ggk570/Bsc-IT-Sem-5/blob/main/SPD/Images/Step-Wise%20Project%20Planning.png)
 1. The stepwise project planning approach is a structured method for managing projects that breaks down the planning process into a series of sequential steps
 2. A typical stepwise project plan has 10 steps, including:
 	1. **Select Project:** This is called Step 0 because in a way it is outside the main project planning process. Projects are not initiated out of thin air - some activity has to take place before deciding that this project rather than another is worth undertaking. This project evaluation may be done on an individual basis or as part of strategic planning.
